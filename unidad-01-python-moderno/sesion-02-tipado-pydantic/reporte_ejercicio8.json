@@ -1,0 +1,29 @@
+{
+  "config": {
+    "batch_name": "Class demo",
+    "threshold": 0.9,
+    "max_records": 10
+  },
+  "accepted": [
+    {
+      "text": "excelente servicio",
+      "label": "positive",
+      "score": 0.95,
+      "source": null
+    }
+  ],
+  "issues": [
+    {
+      "position": 1,
+      "field": "text",
+      "message": "String should have at least 1 character",
+      "error_type": "string_too_short"
+    },
+    {
+      "position": 1,
+      "field": "score",
+      "message": "Input should be less than or equal to 1",
+      "error_type": "less_than_equal"
+    }
+  ]
+}
